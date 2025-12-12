@@ -8,7 +8,7 @@ Official implementation of **"Synecdoche: Efficient and Accurate In-Network Traf
 
 Synecdoche is a novel traffic classification framework that bridges the accuracy-efficiency gap on programmable data planes through direct packet sequential pattern matching. Our key innovation is leveraging **Key Segments** - discriminative packet subsequences that encapsulate the essence of traffic patterns - enabling high-accuracy classification with minimal hardware resources.
 
-![image-20251212143540321](C:\Users\Administrator\Desktop\README.assets\image-20251212143540321.png)
+![Synecdoche](D:\code\Synecdoche\README.assets\Synecdoche.png)
 
 ### Key Features
 
@@ -33,6 +33,7 @@ cd Synecdoche
 1. Install dependencies:
 
 ```bash
+conda install tensorflow
 pip install -r requirements.txt
 ```
 
