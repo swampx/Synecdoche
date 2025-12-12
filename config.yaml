@@ -1,0 +1,27 @@
+dataset:
+  name: 'cstnet1.3_small'
+  pcap_folder: 'dataset_pcap/'
+  txt_folder: 'dataset_txt/'
+  num_classes: 16
+
+preprocess:
+  sample_limit: 10000 # max sample per class
+  max_pkt_number: 32 #  selected length per flow
+  min_pkt_number: 5 # filter flow shorter than this threshold
+  split_ratio: 12  # train:valid:test=10:1:1
+
+cnn_training:
+  convs: 2
+  embed_dimension: 128
+  filter: 128
+  model_saved_path: 'saved_model/'
+  epochs: 60
+  batch_size: 32
+
+rules_generating:
+  max_length: 4 # max length for key segments
+  rules_path: 'key_segments/'
+  max_sample_num: -1  #  number of samples per class using for generating candidate segments, -1 refers to all samples
+  eps: 1 # eps parameter for DBSCAN
+  ratio: 0.001 # min_samples ratio for DBSCAN
+  score: 1.5 # score threshold for filtering, higher score refers to high quality segments but less coverage to test samples

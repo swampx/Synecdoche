@@ -1,0 +1,14 @@
+# Core Dependencies
+tensorflow>=2.6.0
+scikit-learn
+pyyaml
+
+# Traffic Processing
+nfstream
+
+# Model Interpretability
+tf-keras-vis
+
+# Utilities
+joblib
+pathlib
