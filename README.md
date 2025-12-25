@@ -4,6 +4,7 @@
 
 Official implementation of **"Synecdoche: Efficient and Accurate In-Network Traffic Classification via Direct Packet Sequential Pattern Matching"**, accepted at IEEE INFOCOM 2026.
 
+Paper Link: https://arxiv.org/abs/2512.21116
 ## 📖 Overview
 
 Synecdoche is a novel traffic classification framework that bridges the accuracy-efficiency gap on programmable data planes through direct packet sequential pattern matching. Our key innovation is leveraging **Key Segments** - discriminative packet subsequences that encapsulate the essence of traffic patterns - enabling high-accuracy classification with minimal hardware resources.
